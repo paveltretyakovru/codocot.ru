@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => true ,
+    //'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -144,6 +145,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * Includes by Tretyakov Pavel <tretyakovpavel.ru@gmail.com>
+         */
+        Illuminate\Html\HtmlServiceProvider::class ,
+
     ],
 
     /*
@@ -192,6 +198,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        /**
+         * Includes by Pavel Tretyakov <tretyakovpavel.ru@gmail.com>
+         */
+        'Form'      => Illuminate\Html\FormFacade::class,
+        'HTML'      => Illuminate\Html\HtmlFacade::class ,
     ],
 
 ];
