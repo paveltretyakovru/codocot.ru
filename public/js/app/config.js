@@ -83,6 +83,10 @@ requirejs.config({
             'deps': ['jquery']
         },
 
+        'flat-ui' : {
+            'deps' : ['jquery' , 'bootstrap']
+        } ,
+
         // TESTS
         'jasmine': {
             exports: 'window.jasmineRequire'

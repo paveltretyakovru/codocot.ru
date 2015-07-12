@@ -8,11 +8,23 @@
     {!! HTML::style('/bower_components/flat-ui/dist/css/flat-ui.css') !!}
 
     {{-- Plugins level --}}
-    {!! HTML::style('/bower_components/pace/themes/green/pace-theme-flat-top.css') !!}
+    {!! HTML::style('/bower_components/pace/themes/green/pace-theme-minimal.css') !!}
 </head>
+
+
 <body>
 
-	@yield('content')
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                @include('includes.menu')
+            </div>
+
+            <div class="col-md-12">
+                @yield('content')
+            </div>
+        </div>
+    </div>	
 
 	{!! HTML::script('/bower_components/requirejs/require.js') !!}
     {!! HTML::script('js/app/config.js') !!}
