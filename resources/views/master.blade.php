@@ -2,88 +2,121 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Кодошелуха</title>
+	<title>Кодокот</title>
     {{-- Core style level --}}
     {!! HTML::style('/bower_components/bootstrap/dist/css/bootstrap.min.css') !!}
     {!! HTML::style('/bower_components/flat-ui/dist/css/flat-ui.css') !!}
 
     {{-- Plugins level --}}
     {!! HTML::style('/bower_components/pace/themes/green/pace-theme-minimal.css') !!}
+    {!! HTML::style('/bower_components/Blueprint-VerticalIconMenu/css/component.css') !!}
+    {!! HTML::style('/bower_components/HorizontalSlideOutMenu/css/component.css') !!} 
 
     {{-- Tretyakov Pavel level --}}
-    {!! HTML::style('css/system/sidebar.css') !!}
+    {!! HTML::style('/css/system.css') !!}
+    
 </head>
 
 
 <body>
-    @include('includes.menu')
 
+<nav class="navbar navbar-inverse navbar-embossed navbar-fixed-top" role="navigation">
 
-<div id="wrapper">
+  <div class="container" id="bg-content">
+    <div class="col-xs-12">
 
-    @include('includes.sidebar')
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+        <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="#" id="codocotologo"><img src="images/cats/logono.png"></a>
+      </div>
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                     @yield('content')
-                </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-01">
+        
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#fakelink">About Us</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-right" action="#" role="search">
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+              <span class="input-group-btn">
+                <button type="submit" class="btn"><span class="fui-search"></span></button>
+              </span>
             </div>
-        </div>
+          </div>
+        </form>
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /col-xs-12 -->
+  </div><!-- /container -->
+
+</nav>
+
+<div id="awan"></div>
+
+<div class="container" id="bg-content">
+  <div class="col-md-8">
+
+    <div class="row row_margin">
+        <small>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</small>
+        <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>      
     </div>
-    <!-- /#page-content-wrapper -->
 
-</div>
-    <!-- /#wrapper -->
+    <div class="row row_margin">    
+        <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+        <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+    </div>
 
+    <div class="row row_margin">
+        <small>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</small>
+        <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>      
+    </div>
+
+  </div><!-- /.col-md-8 -->
+
+  <div class="col-md-4 sidebar-block">
+    <div class="row row_margin">
+      test
+    </div>
+  </div>
+</div><!-- /.container -->
+
+
+<footer class="navbar-fixed-bottom row-fluid">
+  <div class="container">
+    <div class="row">
+      {!! HTML::image('images/cats/dance_cot.gif' , 'dance cat' , ['class' => 'dance_cat_gif'] ) !!}
+    </div>
+  </div>
+</footer>
    
 
-	{!! HTML::script('/bower_components/requirejs/require.js') !!}
-    {!! HTML::script('js/app/config.js') !!}
+{!! HTML::script('/bower_components/requirejs/require.js') !!}
+{!! HTML::script('js/app/config.js') !!}
 
-    <script type="text/javascript">
-    	require(['app/app' , 'pace'] , function(app , pace){
-    		'use strict';
+<script type="text/javascript">
 
-            pace.start({
-                document: false
-            });
+  require(['app/app' , 'pace'] , function(app , pace){
+    'use strict';
 
-    		window.app = app || false;
-    		app.start();
+    pace.start({
+      document: false
+    });
 
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-            $("#menu-toggle-2").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled-2");
-                $('#menu ul').hide();
-            });
+    window.app = app || false;
+    app.start();
 
-            function initMenu() {
-                $('#menu ul').hide();
-                $('#menu ul').children('.current').parent().show();
-                //$('#menu ul:first').show();
-                $('#menu li a').click(
-                    function() {
-                        var checkElement = $(this).next();
-                        if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-                            return false;
-                        }
-                        if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-                            $('#menu ul:visible').slideUp('normal');
-                            checkElement.slideDown('normal');
-                            return false;
-                        }
-                    }
-                );
-            }
-            $(document).ready(function() {initMenu();});
-        });
-    </script>
+    $('.dropdown-toggle').dropdown();
+
+  });
+
+</script>
+
 </body>
 </html>
