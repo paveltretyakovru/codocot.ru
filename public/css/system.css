@@ -4,22 +4,25 @@ body 		{background-color: #47B2DA; font-family: Arial}
 footer		{5px solid #037203; background: url('../images/bgs/hill_mini.png') repeat-x bottom; min-height: 78px}
 
 .dance_cat_gif 	{float: right; height: 60px}
-.row_margin     {margin-bottom: 10px; margion-left: 20px;}
+.row_margin     {margin-bottom: 10px;}
 .sidebar-block  {}
 
 .container [class^="col-"], .container[class*="col-"]{
   padding-right: 35px;
-  padding-left: 25px;
+  padding-left: 10px;
 }
 
-#codocotologo		{ padding: 0; margin-right: 20px }
-#codocotologo img 	{ float: left; height: 50px}
-#bg-content   .row	{ background-color: #fff; border-radius: 3px; padding: 20px; }
+#codocotologo		      { padding: 0; margin-right: 20px }
+#codocotologo img 	  { float: left; height: 50px}
+#bg-content           { margin-top: 60px  }
+  #bg-content   .row	{ background-color: #fff; border-radius: 3px; padding: 20px;}
 
 
 /* CLOUDS */
 #awan {
 	top:0px;left:0px;
+  position: absolute;
+  z-index: -1;
 	width:100%;
 	height:100%;
 	height: 170px;

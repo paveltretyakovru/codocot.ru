@@ -3,26 +3,26 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Кодокот</title>
+
     {{-- Core style level --}}
     {!! HTML::style('/bower_components/bootstrap/dist/css/bootstrap.min.css') !!}
     {!! HTML::style('/bower_components/flat-ui/dist/css/flat-ui.css') !!}
 
     {{-- Plugins level --}}
     {!! HTML::style('/bower_components/pace/themes/green/pace-theme-minimal.css') !!}
-    {!! HTML::style('/bower_components/Blueprint-VerticalIconMenu/css/component.css') !!}
-    {!! HTML::style('/bower_components/HorizontalSlideOutMenu/css/component.css') !!} 
 
     {{-- Tretyakov Pavel level --}}
     {!! HTML::style('/css/system.css') !!}
-    
 </head>
 
 
 <body>
 
+<div id="awan"></div>
+
 <nav class="navbar navbar-inverse navbar-embossed navbar-fixed-top" role="navigation">
 
-  <div class="container" id="bg-content">
+  <div class="container">
     <div class="col-xs-12">
 
       <div class="navbar-header">
@@ -35,13 +35,13 @@
       <div class="collapse navbar-collapse" id="navbar-collapse-01">
         
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#fakelink">About Us</a></li>
+          <li><a href="#fakelink">Проекты</a></li>
         </ul>
 
         <form class="navbar-form navbar-right" action="#" role="search">
           <div class="form-group">
             <div class="input-group">
-              <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+              <input class="form-control" id="navbarInput-01" type="search" placeholder="Поиск">
               <span class="input-group-btn">
                 <button type="submit" class="btn"><span class="fui-search"></span></button>
               </span>
@@ -55,13 +55,11 @@
 
 </nav>
 
-<div id="awan"></div>
-
 <div class="container" id="bg-content">
   <div class="col-md-8">
 
     <div class="row row_margin">
-        <small>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</small>
+        <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
         <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
         <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>      
     </div>
@@ -73,7 +71,7 @@
     </div>
 
     <div class="row row_margin">
-        <small>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</small>
+        <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
         <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
         <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>      
     </div>
