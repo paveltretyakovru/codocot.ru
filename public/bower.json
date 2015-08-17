@@ -28,6 +28,7 @@
     "backbone": "~1.2.1",
     "requirejs-i18n": "~2.0.6",
     "sightglass": "~0.2.4",
-    "rivets": "~0.8.1"
+    "rivets": "~0.8.1",
+    "requirejs-text": "~2.0.14"
   }
 }
