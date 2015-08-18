@@ -7,3 +7,5 @@ Route::get('/', function () {
 Route::get('/configs' , function(){
 	return \Response::json(['hello' => 'world']);
 });
+
+Route::resource('projects', 'ProjectsController');

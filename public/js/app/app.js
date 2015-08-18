@@ -14,9 +14,13 @@ define(function(require){
     var app = new Marionette.Application({
 
         regions:{
-            regionTopMenu   : '#topmenu' ,
+            regionTopMenu   : '#topmenu'        ,
             regionContent   : '#region-content'
         },
+
+        initialize : function(){
+            if(DEBUG) console.log('Initialize application');
+        } ,
 
         preload: function(){
             if(DEBUG) console.log('app: preload');

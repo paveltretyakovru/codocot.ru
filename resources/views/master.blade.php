@@ -33,29 +33,13 @@
 <div class="container" id="bg-content">
   <div class="col-md-8" id="region-content">
 
-    <div class="row row_margin">
-        <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-        <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>      
-    </div>
-
-    <div class="row row_margin">    
-        <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-        <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-    </div>
-
-    <div class="row row_margin">
-        <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-        <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>      
-    </div>
+    <center>{!! HTML::image('images/cats/balloon.gif') !!}</center>
 
   </div><!-- /.col-md-8 -->
 
-  <div class="col-md-4 sidebar-block">
-    <div class="row row_margin" style="margin:auto">
+  <div class="col-md-4 sidebar-block" id="region-widgets">
 
+    <div class="row row_margin" style="margin:auto">
       <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
       <!-- VK Widget -->
       <div id="vk_groups"></div>
@@ -63,6 +47,7 @@
       VK.Widgets.Group("vk_groups", {mode: 2, width: "300", height: "400"}, 100009050);
       </script>
     </div>
+
   </div>
 </div><!-- /.container -->
 

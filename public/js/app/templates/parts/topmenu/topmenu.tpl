@@ -10,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse-01">
     
     <ul class="nav navbar-nav navbar-left">
-      <li><a href="#fakelink">Проекты</a></li>
+      <li><a href="#projects">Проекты</a></li>
     </ul>
 
     <form class="navbar-form navbar-right" action="#" role="search">

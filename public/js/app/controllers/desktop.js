@@ -3,7 +3,13 @@ define(function(require){
 
     var Marionette = require('marionette');
 
-    var viewTopMenu = require('views/parts/topmenu/topmenu.view');
+    var viewTopMenu     = require('views/parts/topmenu/topmenu.view');
+    var LoaderCat       = require('views/dinamics/loader_cat');
+
+    var Pages           = {
+        Projects    : require('views/pages/projects/projects') ,
+        Home        : require('views/pages/home/home')
+    }
 
     return Marionette.Controller.extend({
 
@@ -15,21 +21,14 @@ define(function(require){
             if(DEBUG) console.log('route: ' + pageName);
             var args = Array.prototype.slice.call(arguments);
 
-            // if(app.page_not_save){
-            //     app.message.error('Не сохранили изменения');
-            //     window.history.back();
-            // }else{
-                app.regionContent.show( new Preloader() );
-                //app.regionContent.show( new Pages[pageName] );
-                app.regionContent.show( new Pages[ args.shift() ] (args));
+            app.regionContent.show( new LoaderCat() );
+            app.regionContent.show( new Pages[ args.shift() ] (args));
 
-                if(app.loaded) $('#b-content > div').removeClass('hide').addClass('animated fadeIn');
-            // }
+            if(app.loaded) $('#b-content > div').removeClass('hide').addClass('animated fadeIn');
         },
 
-        Home : function(){
-        	if(DEBUG)console.log('Home controller init here :)');
-        }
+        Home        : function(){ this.run( 'Home'       );  } ,
+        Projects    : function(){ this.run( 'Projects'   );  } ,
 
     });
 

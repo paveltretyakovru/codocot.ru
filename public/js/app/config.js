@@ -21,13 +21,16 @@ requirejs.config({
         'sightglass':          'bower_components/sightglass/index',
 
         // PATHS
-        'app'           : 'js/app',
-        'system'        : 'js/app/system',
-        'nls'           : 'js/app/nls',
-        'controllers'   : 'js/app/controllers',
-        'utils'         : 'js/app/utils' ,
-        'tmpls'         : 'js/app/templates' ,
-        'views'         : 'js/app/views' ,
+        'app'           : 'js/app'                  ,
+        'nls'           : 'js/app/nls'              ,
+        'utils'         : 'js/app/utils'            ,
+        'tmpls'         : 'js/app/templates'        ,
+        'views'         : 'js/app/views'            ,
+        'models'        : 'js/app/models'           ,
+        'system'        : 'js/app/system'           ,
+        'components'    : 'js/app/components'       ,
+        'controllers'   : 'js/app/controllers'      ,
+        'collections'   : 'js/app/collections'      ,
 
         // PLUGINS
         'bootstrap':        'bower_components/bootstrap/dist/js/bootstrap.min',
