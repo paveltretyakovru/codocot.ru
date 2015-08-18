@@ -1,3 +1,3 @@
-<div class="row row_margin">    
+<div class="row row_margin">
 	{{ content }}
 </div>
