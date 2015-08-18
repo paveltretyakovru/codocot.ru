@@ -31,7 +31,7 @@
 </nav>
 
 <div class="container" id="bg-content">
-  <div class="col-md-8">
+  <div class="col-md-8" id="region-content">
 
     <div class="row row_margin">
         <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>

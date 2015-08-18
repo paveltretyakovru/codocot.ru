@@ -14,7 +14,8 @@ define(function(require){
     var app = new Marionette.Application({
 
         regions:{
-            regionTopMenu : '#topmenu'
+            regionTopMenu   : '#topmenu' ,
+            regionContent   : '#region-content'
         },
 
         preload: function(){
