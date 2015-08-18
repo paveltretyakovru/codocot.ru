@@ -6,6 +6,6 @@ define(function(require){
 	var Template 	= require('text!tmpls/components/prepost/prepost.tpl'); 
 
 	return Marionette.ItemView.extend({
-		template : Template
+		template : Template ,
 	});
 });
