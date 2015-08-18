@@ -8,4 +8,6 @@ Route::get('/configs' , function(){
 	return \Response::json(['hello' => 'world']);
 });
 
-Route::resource('projects', 'ProjectsController');
+Route::resource('projects'	, 'ProjectsController'	);
+Route::resource('news' 		, 'NewsController'		);
+

@@ -5,6 +5,7 @@ define(function(require){
     var Routes     = require('app/routes');
     var Desktop    = require('controllers/desktop');
     var Handlebars = require('handlebars');
+    var LoaderCat  = require('views/dinamics/loader_cat');
 
     require('system/helpers');
     require('bootstrap');
@@ -12,6 +13,7 @@ define(function(require){
     require('backbone.rivets');
 
     var app = new Marionette.Application({
+        helpers : {} ,
 
         regions:{
             regionTopMenu   : '#topmenu'        ,
@@ -20,6 +22,12 @@ define(function(require){
 
         initialize : function(){
             if(DEBUG) console.log('Initialize application');
+
+            var _this = this;
+
+            this.helpers.showLoad = function(){
+                _this.regionContent.show( new LoaderCat() );
+            }
         } ,
 
         preload: function(){

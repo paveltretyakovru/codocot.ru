@@ -4,7 +4,6 @@ define(function(require){
     var Marionette = require('marionette');
 
     var viewTopMenu     = require('views/parts/topmenu/topmenu.view');
-    var LoaderCat       = require('views/dinamics/loader_cat');
 
     var Pages           = {
         Projects    : require('views/pages/projects/projects') ,
@@ -21,7 +20,7 @@ define(function(require){
             if(DEBUG) console.log('route: ' + pageName);
             var args = Array.prototype.slice.call(arguments);
 
-            app.regionContent.show( new LoaderCat() );
+            app.helpers.showLoad();            
             app.regionContent.show( new Pages[ args.shift() ] (args));
 
             if(app.loaded) $('#b-content > div').removeClass('hide').addClass('animated fadeIn');
