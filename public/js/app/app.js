@@ -17,7 +17,8 @@ define(function(require){
 
         regions:{
             regionTopMenu   : '#topmenu'        ,
-            regionContent   : '#region-content'
+            regionContent   : '#region-content' ,
+            regionWidgets   : '#region-widgets'
         },
 
         initialize : function(){

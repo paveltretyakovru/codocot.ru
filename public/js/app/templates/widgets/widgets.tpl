@@ -1,3 +1,3 @@
-<div class="row row_margin" style="margin:auto">
-	{{ content }}
+<div class="row row_margin widget-region" style="margin:auto">
+
 </div>

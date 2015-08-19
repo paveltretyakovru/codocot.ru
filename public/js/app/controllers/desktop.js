@@ -4,6 +4,9 @@ define(function(require){
     var Marionette = require('marionette');
 
     var viewTopMenu     = require('views/parts/topmenu/topmenu.view');
+    var Widgets         = require('widgets/widgets');
+
+    console.log('WIdgets ' , Widgets);
 
     var Pages           = {
         Projects    : require('views/pages/projects/projects') ,
@@ -14,6 +17,7 @@ define(function(require){
 
         initialize: function(){
             app.regionTopMenu.show( new viewTopMenu() );
+            app.regionWidgets.show( new Widgets() );
         } ,
 
         run : function(pageName , pageParameters){
