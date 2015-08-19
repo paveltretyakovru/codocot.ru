@@ -31,24 +31,28 @@
 </nav>
 
 <div class="container" id="bg-content">
+
+  {{-- Регион с контентом --}}
   <div class="col-md-8" id="region-content">
 
     <center>{!! HTML::image('images/cats/balloon.gif') !!}</center>
 
   </div><!-- /.col-md-8 -->
+  {{-- Конец региона с контентом --}}
 
-  <div class="col-md-4 sidebar-block" id="region-widgets">
+  {{-- Реогин с виджетами сайта --}}
+  <div class="col-md-4 sidebar-block" id="region-widgets">    
 
-    <div class="row row_margin" style="margin:auto">
       <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
       <!-- VK Widget -->
       <div id="vk_groups"></div>
       <script type="text/javascript">
       VK.Widgets.Group("vk_groups", {mode: 2, width: "300", height: "400"}, 100009050);
       </script>
-    </div>
 
   </div>
+  {{-- Конец региона с виджетами сайта --}}
+
 </div><!-- /.container -->
 
 

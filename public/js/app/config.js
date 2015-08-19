@@ -31,6 +31,7 @@ requirejs.config({
         'components'    : 'js/app/components'       ,
         'controllers'   : 'js/app/controllers'      ,
         'collections'   : 'js/app/collections'      ,
+        'widgets'       : 'js/app/widgets'          ,
 
         // PLUGINS
         'bootstrap':        'bower_components/bootstrap/dist/js/bootstrap.min',
