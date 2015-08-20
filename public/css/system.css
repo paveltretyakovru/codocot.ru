@@ -15,7 +15,9 @@ footer		{5px solid #037203; background: url('../images/bgs/hill_mini.png') repea
 #codocotologo		      { padding: 0; margin-right: 20px }
 #codocotologo img 	  { float: left; height: 50px}
 #bg-content           { margin-top: 60px  }
-  #bg-content   .row	{ background-color: #fff; border-radius: 3px; padding: 20px;}
+
+  #region-content , #region-widgets           { margin-top: 7px; }
+  #region-content .row , #region-widgets .row { background-color: #fff; border-radius: 3px; padding: 20px;}
 
 
 /* CLOUDS */

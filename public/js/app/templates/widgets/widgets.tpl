@@ -1,3 +1,7 @@
-<div class="row row_margin widget-region" style="margin:auto">
+<div id="widget-region">
+	
+	<div class="row row_margin" id="region-vk-list-widget" style="margin:auto">
+
+	</div>
 
 </div>

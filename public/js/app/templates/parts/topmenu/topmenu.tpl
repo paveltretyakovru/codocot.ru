@@ -13,6 +13,10 @@
       <li><a href="#projects">Проекты</a></li>
     </ul>
 
+    <div class="navbar-right">
+        <span class="fui-plus"> </span>
+    </div>
+
     <form class="navbar-form navbar-right" action="#" role="search">
       <div class="form-group">
         <div class="input-group">

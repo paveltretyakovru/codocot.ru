@@ -30,6 +30,7 @@
 
 </nav>
 
+
 <div class="container" id="bg-content">
 
   {{-- Регион с контентом --}}
@@ -56,7 +57,7 @@
   </div>
 </footer>
    
-
+{!! HTML::script('//vk.com/js/api/openapi.js?116') !!}
 {!! HTML::script('/bower_components/requirejs/require.js') !!}
 {!! HTML::script('js/app/config.js') !!}
 

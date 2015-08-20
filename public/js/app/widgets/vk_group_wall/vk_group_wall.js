@@ -6,19 +6,18 @@ define(function(require){
 
 	var Marionette 	= require('marionette');
 
-	var Template 	= '<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script><div id="vk_groups"></div><script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 2, width: "300", height: "400"}, 100009050);</script>';
-	var Model 		= Backbone.Model.extend();
-
+	var Template 	= '<div id="vk_groups"></div>';
+	
 	return Marionette.ItemView.extend({
 		template : Template ,
 
-		initalize : function(){
-			console.log('Initialize vk_widget');
-			this.model = new Model();
+		initialize : function(){
+			this.on('render' , this.afterRender , this);
+		} ,
 
-			this.model.set('content' , content);
+		afterRender : function(){
+			VK.Widgets.Group("vk_groups", {mode: 2, width: "300", height: "400" , color3 : "#2f4154"}, 100009050);
 		}
-
 	});
 	
 });
