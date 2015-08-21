@@ -63,6 +63,14 @@
 
 <script type="text/javascript">
 
+ function authInfo(response) {
+    if (response.session) {
+      alert('user: '+response.session.mid);
+    } else {
+      alert('not auth');
+    }
+  }
+
   require(['app/app' , 'pace'] , function(app , pace){
     'use strict';
 

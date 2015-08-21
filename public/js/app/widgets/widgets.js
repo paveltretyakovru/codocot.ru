@@ -26,7 +26,7 @@ define(function(require){
 
 		afterRender : function(){
 			this.regionWidgetVkGroup.show( this.widgetVkGroup );
-			this.regionWidgetAuth.show( this.widgetAuth );
+			this.regionWidgetAuth.show( this.widgetAuth);
 		}
 
 	});

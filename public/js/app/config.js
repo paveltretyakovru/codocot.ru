@@ -19,6 +19,7 @@ requirejs.config({
         'handlebars':          'bower_components/handlebars/handlebars.min',
         'rivets':              'bower_components/rivets/dist/rivets',
         'sightglass':          'bower_components/sightglass/index',
+        'backbone-validation': 'bower_components/backbone-validation/dist/backbone-validation-min' ,
 
         // PATHS
         'app'           : 'js/app'                  ,
@@ -78,6 +79,9 @@ requirejs.config({
         },
         'backbone.rivets': {
             'deps': ['backbone', 'rivets']
+        },
+        'backbone-validation' : {
+            'deps': ['jquery' , 'backbone']
         },
 
         // PLUGINS

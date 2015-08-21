@@ -29,6 +29,7 @@
     "requirejs-i18n": "~2.0.6",
     "sightglass": "~0.2.4",
     "rivets": "~0.8.1",
-    "requirejs-text": "~2.0.14"
+    "requirejs-text": "~2.0.14",
+    "backbone-validation": "~0.11.5"
   }
 }
