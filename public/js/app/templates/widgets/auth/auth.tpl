@@ -10,7 +10,7 @@
 
 
   <div class="form-group">
-    <input type="password" class="form-control login-field" rv-value="model:password" placeholder="Пароль" id="login-pass">
+    <input type="password" name="login" class="form-control login-field" rv-value="model:password" placeholder="Пароль" id="login-pass">
     <label class="login-field-icon fui-lock" for="login-pass"></label>
     <span class="help-block hidden"></span>
   </div>
