@@ -21,4 +21,13 @@
   <a class="btn btn-primary btn-lg btn-block" href="#user/registration">Регистрация</a>
   <a class="login-link" href="#">Потеряли пароль?</a>
 
+  <div id="service-auth">
+    
+    {!-- Авторизация через ВК --}
+    <a href="" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+      <span class="fa fa-vk fa-2x"></span>
+    </a>
+
+  </div>
+
 </div>

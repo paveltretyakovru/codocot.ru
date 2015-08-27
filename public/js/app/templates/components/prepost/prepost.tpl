@@ -1,4 +1,4 @@
 <div class="row row_margin">
-	<h3>{{ title }}</h3>
+	<h5>{{ title }}</h5>
 	{{ content }}
 </div>

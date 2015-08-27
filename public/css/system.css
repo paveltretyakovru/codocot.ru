@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,300,700&subset=latin,cyrillic-ext,cyrillic);
 
 body 		{background-color: #47B2DA; font-family: Arial}
-footer		{5px solid #037203; background: url('../images/bgs/hill_mini.png') repeat-x bottom; min-height: 78px}
+footer	{background: url('../images/bgs/hill_mini.png') repeat-x bottom; min-height: 78px}
+iframe  {border-radius: 6px}
 
 .dance_cat_gif 	{float: right; height: 60px}
 .row_margin     {margin-bottom: 10px;}
@@ -17,7 +18,9 @@ footer		{5px solid #037203; background: url('../images/bgs/hill_mini.png') repea
 #bg-content           { margin-top: 60px  }
 
   #region-content , #region-widgets           { margin-top: 7px; }
-  #region-content .row { background-color: #fff; border-radius: 3px; padding: 20px;}
+  #region-content .row { background-color: #fff; border-radius: 6px; padding: 5px; 0 0 0 1px rgba(0,0,0,0.05); box-shadow: 0 0 0 1px rgba(0,0,0,0.05); }
+
+#service-auth { text-align: center }
 
 #vk_groups { width: 100% }
   #vk_groups iframe { width: 100% !important }

@@ -8,6 +8,8 @@ define(function(require){
     var LoaderCat  = require('views/dinamics/loader_cat');
     var UserModel  = require('models/user');
     var Listener   = require('utils/listener');
+    var Vk_after   = require('utils/vk_after_render');
+    var make_plugins = require('utils/make_plugins');
 
     require('system/helpers');
     require('bootstrap');
@@ -43,8 +45,6 @@ define(function(require){
                 _this.regionContent.show( new LoaderCat() );
             }
 
-            // Инициализируем ВК API
-            VK.init({ apiId: 'codocot.local' });
         } ,
 
         preload: function(){
@@ -70,15 +70,9 @@ define(function(require){
         Rivets  : rivets
     });
 
-    app.addInitializer(function(options){
-        if(DEBUG) console.log('app: init');
+    app.addInitializer(function(options){ this.preload(); });
 
-        this.preload();
-    });
-
-    Marionette.Behaviors.behaviorsLookup = function() {
-        return window.Behaviors;
-    }
+    Marionette.Behaviors.behaviorsLookup = function() { return window.Behaviors; }
 
     Marionette.Renderer.render = function(template, data){
         var toHTML = Handlebars.compile(template);
@@ -86,8 +80,14 @@ define(function(require){
     };
 
     app.regionWidgets.on('show' , function(){
-        // После показа виджетов     
-    } );   
+        console.log('Region widgets show');
+        make_plugins();
+        // После показа виджетов 
+    } );
+
+    app.on('start' , function(){
+        app.vk = new Vk_after();
+    });
 
     return app;
 });

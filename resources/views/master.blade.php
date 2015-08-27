@@ -7,6 +7,7 @@
     {{-- Core style level --}}
     {!! HTML::style('/bower_components/bootstrap/dist/css/bootstrap.min.css') !!}
     {!! HTML::style('/bower_components/flat-ui/dist/css/flat-ui.css') !!}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     {{-- Plugins level --}}
     {!! HTML::style('/bower_components/pace/themes/green/pace-theme-minimal.css') !!}
