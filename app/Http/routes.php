@@ -11,5 +11,7 @@ Route::get('/configs' , function(){
 Route::resource('projects'	, 'ProjectsController'	);
 Route::resource('news' 		, 'NewsController'		);
 
-// Users
-Route::post('/users/auth' , 'UsersController@auth');
+// Authentication routes...
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');

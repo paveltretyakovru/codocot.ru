@@ -40,20 +40,16 @@ define(function(require){
 	            console.info('Данные успешно прошли валидацию, отправка данных на сервер');
 	            
 	            $.ajax({
-	            	url 		: '/users/auth',
+	            	url 		: '/auth/login',
 	            	type 		: 'POST',
 	            	dataType 	: 'json',
 	            	data 		: _this.model.toJSON() ,
 	            })
-	            .done(function(test) {
-	            	console.log("success" , test);
+	            .done(function( data ) {
+	            	console.log( data );
 	            })
-	            .fail(function() {
-	            	console.log("error");
-	            })
-	            .always(function() {
-	            	console.log("complete");
-	            });
+	            .fail(   function() { } )
+	            .always( function() { } );
 	            	
 	        } else {
 	            console.error('Необходимо заполнить все поля формы');
