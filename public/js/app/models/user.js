@@ -10,9 +10,9 @@ define(function(require){
 
 		// Валидируем модель :)
 		validation : {
-			login : {
+			email : {
 				required 	: true ,
-				msg 		: 'Укажите Ваш логин'
+				msg 		: 'Укажите Ваш email'
 			} ,
 
 			password : {

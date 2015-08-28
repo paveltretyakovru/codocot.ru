@@ -2,15 +2,17 @@
 
 <form>
 
+  <input type="hidden" name="_token" rv-value="model:token">
+
   <div class="form-group">
+    <input type="text" class="form-control" rv-value="model:email" placeholder="Email" id="login-email" name="email">
+    <label class="login-field-icon fui-mail" for="login-email"></label>
     <span class="help-block hidden"></span>
-    <input type="text" class="form-control login-field" rv-value="model:login" placeholder="Email" id="login-name">
-    <label class="login-field-icon fui-user" for="login-name"></label>
   </div>
 
 
   <div class="form-group">
-    <input type="password" name="login" class="form-control login-field" rv-value="model:password" placeholder="Пароль" id="login-pass">
+    <input type="password" class="form-control" rv-value="model:password" placeholder="Пароль" id="login-pass" name="password">
     <label class="login-field-icon fui-lock" for="login-pass"></label>
     <span class="help-block hidden"></span>
   </div>

@@ -7,14 +7,15 @@ iframe  {border-radius: 6px}
 .dance_cat_gif 	{float: right; height: 60px}
 .row_margin     {margin-bottom: 10px;}
 .sidebar-block  {}
+.login-form     { background-color: #fff }
 
 .container [class^="col-"], .container[class*="col-"]{
   padding-right: 35px;
   padding-left: 10px;
 }
 
-#codocotologo		      { padding: 0; margin-right: 20px }
-#codocotologo img 	  { float: left; height: 50px}
+#codocotologo         { padding: 0; margin-right: 20px }
+#codocotologo img     { float: left; height: 50px}
 #bg-content           { margin-top: 60px  }
 
   #region-content , #region-widgets           { margin-top: 7px; }
@@ -24,6 +25,7 @@ iframe  {border-radius: 6px}
 
 #vk_groups { width: 100% }
   #vk_groups iframe { width: 100% !important }
+
 
 
 /* CLOUDS */

@@ -14,6 +14,10 @@
 
     {{-- Tretyakov Pavel level --}}
     {!! HTML::style('/css/system.css') !!}
+
+    <script type="text/javascript">
+      var token = "{!! csrf_token() !!}";
+    </script>
 </head>
 
 

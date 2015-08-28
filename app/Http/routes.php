@@ -11,3 +11,5 @@ Route::get('/configs' , function(){
 Route::resource('projects'	, 'ProjectsController'	);
 Route::resource('news' 		, 'NewsController'		);
 
+// Users
+Route::post('/users/auth' , 'UsersController@auth');
