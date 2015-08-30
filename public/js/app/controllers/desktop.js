@@ -9,8 +9,9 @@ define(function(require){
     console.log('WIdgets ' , Widgets);
 
     var Pages           = {
-        Projects    : require('views/pages/projects/projects') ,
-        Home        : require('views/pages/home/home')
+        Projects        : require('views/pages/projects/projects') ,
+        Home            : require('views/pages/home/home') ,
+        Register        : require('views/pages/auth/register/register') 
     }
 
     return Marionette.Controller.extend({
@@ -32,6 +33,7 @@ define(function(require){
 
         Home        : function(){ this.run( 'Home'       );  } ,
         Projects    : function(){ this.run( 'Projects'   );  } ,
+        Register    : function(){ this.run( 'Register'   );  }
 
     });
 

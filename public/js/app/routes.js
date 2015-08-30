@@ -10,8 +10,9 @@ define(function(require){
         },
 
         appRoutes: {
-            ''              : 'Home' ,
-            'projects'      : 'Projects'
+            ''                      : 'Home' ,
+            'projects'              : 'Projects' ,
+            'auth/register'         : 'Register'
         }
 
     });

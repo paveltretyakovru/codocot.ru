@@ -20,8 +20,19 @@
 </form>
 
   <a class="btn btn-primary btn-lg btn-block" id="js-login-button" href="#">Войти</a>
-  <a class="btn btn-primary btn-lg btn-block" href="#user/registration">Регистрация</a>
-  <a class="login-link" href="#">Потеряли пароль?</a>
+
+
+  <!-- Ссылки авторизации -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">        
+        <a class="login-link" href="#">Регистрация</a>
+      </div>
+      <div class="col-md-6">
+        <a class="login-link" href="#">Потеряли пароль?</a>        
+      </div>
+    </div>
+  </div>
 
   <div id="service-auth">
     
