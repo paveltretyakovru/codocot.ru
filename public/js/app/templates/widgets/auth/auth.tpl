@@ -26,7 +26,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">        
-        <a class="login-link" href="#">Регистрация</a>
+        <a class="login-link" href="#auth/register">Регистрация</a>
       </div>
       <div class="col-md-6">
         <a class="login-link" href="#">Потеряли пароль?</a>        
