@@ -67,4 +67,8 @@ define(function(require){
         return num + ' ' + result;
     });
 
+    Handlebars.registerHelper('HTML::image' , function(path){
+        var host = (data.paths.images != 'undefined') ? data.paths.images : '/images/'
+    });
+
 });

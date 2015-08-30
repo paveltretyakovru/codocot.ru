@@ -18,6 +18,11 @@ define(function(require){
 			password : {
 				required 	: true ,
 				msg 		: 'Введите Ваш пороль'
+			} ,
+
+			passwordRepeat : {
+				equalTo : 'password' ,
+				msg 	: 'Пароли не совпадают'
 			}
 		}
 	});

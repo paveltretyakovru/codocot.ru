@@ -4,10 +4,9 @@ body 		{background-color: #47B2DA; font-family: Arial}
 footer	{background: url('../images/bgs/hill_mini.png') repeat-x bottom; min-height: 78px}
 iframe  {border-radius: 6px}
 
-.dance_cat_gif 	{float: right; height: 60px}
-.row_margin     {margin-bottom: 10px;}
-.sidebar-block  {}
-.login-form     { background-color: #fff }
+.dance_cat_gif 	        {float: right; height: 60px}
+.row-vertical-margin    {margin-bottom: 10px;}
+.login-form             { background-color: #fff }
 
 .container [class^="col-"], .container[class*="col-"]{
   padding-right: 35px;

@@ -16,7 +16,13 @@
     {!! HTML::style('/css/system.css') !!}
 
     <script type="text/javascript">
-      var token = "{!! csrf_token() !!}";
+      var data = {
+        token : '{!! csrf_token() !!}' ,
+        host  : '{{ URL::to('/') }}'  ,
+        paths : {
+          images : '{{ URL::to('/') }}/images/'
+        }
+      }
     </script>
 </head>
 

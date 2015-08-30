@@ -22,7 +22,7 @@ define(function(require){
 
 		initialize : function(){
 			this.model = app.models.user;
-			this.model.set( '_token' , token );
+			this.model.set( '_token' , data.token );
 
 			// Устанавливаем валидацию
 			Backbone.Validation.bind(this);
