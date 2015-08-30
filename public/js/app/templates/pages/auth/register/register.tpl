@@ -35,4 +35,6 @@
 	</section>
 
 
+	<img src="{{ HTML::image '/cats/yellow_sit_cat.png' }}">
+
 </div>

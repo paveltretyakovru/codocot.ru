@@ -49,18 +49,21 @@ define(function(require){
 
         preload: function(){
             if(DEBUG) console.log('app: preload');
+            var _this = this;
 
             $.ajax({
                 method: 'GET',
-                url: '/configs',
+                url: '/configs/preload',
                 dataType: 'JSON',
-                data:{
-                    action: 'preload'
-                },
                 success: function(data){
+
+                    console.info('Загружены параметры с сервера' , data);
+                    _this.configs = {};
+                    _this.configs = data;
 
                     this.appRouter = new Routes({ controller: new Desktop() });
                     Backbone.history.start();
+
                 }
             });
         } ,

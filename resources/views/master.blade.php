@@ -14,16 +14,7 @@
 
     {{-- Tretyakov Pavel level --}}
     {!! HTML::style('/css/system.css') !!}
-
-    <script type="text/javascript">
-      var data = {
-        token : '{!! csrf_token() !!}' ,
-        host  : '{{ URL::to('/') }}'  ,
-        paths : {
-          images : '{{ URL::to('/') }}/images/'
-        }
-      }
-    </script>
+    
 </head>
 
 

@@ -10,6 +10,7 @@ Route::get('/configs' , function(){
 
 Route::resource('projects'	, 'ProjectsController'	);
 Route::resource('news' 		, 'NewsController'		);
+Route::resource('configs' 	, 'ConfigsController' , [ 'only' => [ 'index' , 'show' ] ] );
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
