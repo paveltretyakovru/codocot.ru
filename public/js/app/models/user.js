@@ -20,7 +20,7 @@ define(function(require){
 				msg 		: 'Введите Ваш пороль'
 			} ,
 
-			passwordRepeat : {
+			repassword : {
 				equalTo : 'password' ,
 				msg 	: 'Пароли не совпадают'
 			}

@@ -186,7 +186,7 @@ define(function(require){
 				},
 
 				invalid: function (view, attr, error, selector) {
-					console.log('Invalid!' , $group , attr);
+					console.log('Invalid!' , attr);
 					
 					var $el = view.$('[name=' + attr + ']'), 
 					$group = $el.closest('.form-group');
