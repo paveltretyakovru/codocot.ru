@@ -29,7 +29,7 @@
         <a class="login-link" href="#auth/register">Регистрация</a>
       </div>
       <div class="col-md-6">
-        <a class="login-link" href="#">Потеряли пароль?</a>        
+        <a class="login-link line-text" href="#">Потеряли пароль?</a>        
       </div>
     </div>
   </div>

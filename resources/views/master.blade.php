@@ -11,6 +11,7 @@
 
     {{-- Plugins level --}}
     {!! HTML::style('/bower_components/pace/themes/green/pace-theme-minimal.css') !!}
+    {!! HTML::style('/css/effects.css') !!}
 
     {{-- Tretyakov Pavel level --}}
     {!! HTML::style('/css/system.css') !!}

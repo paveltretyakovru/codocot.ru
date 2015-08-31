@@ -30,7 +30,7 @@
 				</div>
 
 				<div class="form-group col-lg-12">
-					<input type="submit" class="btn btn-success" value="Зарегестрироваться">
+					<input type="submit" class="btn btn-success width-100" value="Зарегестрироваться">
 				</div>
 			
 			</div>
